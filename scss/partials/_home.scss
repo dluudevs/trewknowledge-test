@@ -1,3 +1,4 @@
+// Hero
 #hero {
   .hero__fullbleed {
     padding-top: 170px; 
@@ -15,11 +16,12 @@
   }
 }
 
-#short-description {
+// Short Description
+#description {
   padding: 50px 0;
 }
 
-.short-description__container {
+.description__container {
   .text-container {
     padding-left: 10px;
   }
@@ -37,6 +39,35 @@
   display: none;
 }
 
+// Popular Resources
+#popular {
+  text-align: center;
+}
+
+.popular__container {
+  .img-container {
+    margin-bottom: 10px;
+  }
+
+  .img-container--light {
+    display: none;
+    margin-bottom: 55px;
+  }
+
+  h4 {
+    margin-bottom: 11px;
+  }
+  
+  p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  
+  a {
+    font-weight: bold;
+  }
+}
 
 @media (min-width: map-get($breakpoints, 'medium')){
   .hero__fullbleed {
@@ -59,7 +90,7 @@
     height: 180px;
   }
   
-  .short-description__container {
+  .description__container {
     text-align: center;
 
     h3 {
@@ -70,16 +101,23 @@
       margin: 0;
     }
   }
+
+  #popular {
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
 }  
 
 @media (min-width: map-get($breakpoints, 'large')){
-  #short-description {
+  #description {
     padding-top: 0;
+    padding-bottom: 90px;
     position: relative;
     top: -50px;
   }
   
-  .short-description__container {
+  .description__container {
     h3 {
       margin: 20px 0;
     }
@@ -93,5 +131,27 @@
 
   .img-container--bg {
     display: none;
+  }
+
+  #popular {
+    padding-bottom: 135px;
+    
+    h2 {
+      margin-bottom: 65px;
+    }
+  }
+
+  .popular__container {
+    .img-container {
+      display: none;
+    }
+
+    .img-container--light {
+      display: flex;
+    }
+    
+    p {
+      margin-bottom: 10px;
+    }
   }
 }

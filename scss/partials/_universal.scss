@@ -2,22 +2,18 @@ body {
   color: $font-blue;
 }
 
-.button {
-  font-size: 1rem;
-}
-
 .fullbleed {
   background-color: $background-blue;
-}
-
-.wrapper {
-  width: 92%;
-  margin: 0 auto;
 }
 
 .img-placeholder--sm {
   max-width: 42px;
   max-height: 30px;
+}
+
+.img-placeholder--md {
+  max-width: 74px;
+  max-height: 54px;
 }
 
 .img-placeholder--lg {
@@ -45,6 +41,11 @@ body {
     max-width: 105px;
     max-height: 77px;
   }
+
+  .img-placeholder--md {
+    max-width: 112px;
+    max-height: 82px;
+  }
 } 
 
 @media (min-width: map-get($breakpoints, 'large')){
@@ -55,8 +56,8 @@ body {
 
 // Foundation
 .button {
-  padding: 0.85em 2.5em;
   background-color: $button-blue;
+  font-size: 1rem;
 }
 
 .button.large {
