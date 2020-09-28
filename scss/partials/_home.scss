@@ -1,6 +1,7 @@
 #hero {
-  .fullbleed {
+  .hero__fullbleed {
     padding-top: 170px; 
+    padding-bottom: 65px;
   }
 
   h1 {
@@ -14,7 +15,35 @@
   }
 }
 
+#short-description {
+  padding: 50px 0;
+}
+
+.short-description__container {
+  .text-container {
+    padding-left: 10px;
+  }
+
+  &:nth-child(2n){
+    margin: 30px 0;
+  }
+}
+
+.img-container--bg {
+  background-color: $background-blue;
+}
+
+.img-container--bg-dark {
+  display: none;
+}
+
+
 @media (min-width: map-get($breakpoints, 'medium')){
+  .hero__fullbleed {
+    padding-top: 110px;
+    padding-bottom: 125px;
+  }
+  
   #hero {
     h1 {
       text-align: left;
@@ -25,4 +54,43 @@
       margin-bottom: 0;
     }
   }
-}   
+
+  .img-container--bg {
+    height: 180px;
+  }
+  
+  .short-description__container {
+    text-align: center;
+
+    h3 {
+      margin: 10px 0;
+    }
+    
+    &:nth-child(2n){
+      margin: 0;
+    }
+  }
+}  
+
+@media (min-width: map-get($breakpoints, 'large')){
+  #short-description {
+    position: relative;
+    top: -100px;
+  }
+  
+  .short-description__container {
+    h3 {
+      margin: 20px 0;
+    }
+  }
+  
+  .img-container--bg-dark {
+    display: flex;
+    height: 235px;
+    background-color: $background-dark-blue;
+  }
+
+  .img-container--bg {
+    display: none;
+  }
+}
