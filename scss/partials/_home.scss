@@ -1,6 +1,9 @@
 // Hero
 #hero {
-  .hero__fullbleed {
+  // TODO: comment out after nav is added
+  // height: 100vh;
+
+  .fullbleed {
     padding-top: 170px; 
     padding-bottom: 65px;
   }
@@ -13,6 +16,10 @@
 
   .img-container {
     margin-bottom: 145px;
+  }
+
+  .button {
+    width: 174px;
   }
 }
 
@@ -29,6 +36,10 @@
   &:nth-child(2n){
     margin: 30px 0;
   }
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .img-container--bg {
@@ -42,11 +53,16 @@
 // Popular Resources
 #popular {
   text-align: center;
+  padding-bottom: 36px;
+
+  h2 {
+    margin-bottom: var(--header-spacing-y);
+  }
 }
 
 .popular__container {
   .img-container {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .img-container--light {
@@ -55,7 +71,7 @@
   }
 
   h4 {
-    margin-bottom: 11px;
+    margin-bottom: 15px;
   }
   
   p {
@@ -69,13 +85,57 @@
   }
 }
 
-@media (min-width: map-get($breakpoints, 'medium')){
-  .hero__fullbleed {
-    padding-top: 110px;
-    padding-bottom: 125px;
+// Benefit
+#benefit {
+  text-align: center;
+
+  .fullbleed {
+    padding: 50px 0;
+  }
+
+  h2 {
+    margin-bottom: var(--header-spacing-y);
+  }
+
+  .button {
+    margin-top: 42px;
+    width: 150px;
+  }
+}
+
+.benefit__container {
+  padding: 54px 36px 38px 36px;
+  background-color: #ffffff;
+
+  &:nth-child(2n){
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   
+  .img-container {
+    margin-bottom: 54px;
+  }
+  
+  h3 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+  
+}
+
+
+// Media Queries
+@media (min-width: map-get($breakpoints, 'medium')){
+  
   #hero {
+    .fullbleed {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+
     h1 {
       text-align: left;
       margin: 0;
@@ -101,20 +161,24 @@
       margin: 0;
     }
   }
-
-  #popular {
-    h2 {
-      margin-bottom: 40px;
-    }
-  }
 }  
 
 @media (min-width: map-get($breakpoints, 'large')){
+  #hero {
+    h1 {
+      max-width: 436px;
+    }
+
+    .button {
+      width: 250px;
+    }
+  }
+  
   #description {
     padding-top: 0;
     padding-bottom: 90px;
     position: relative;
-    top: -50px;
+    top: -55px;
   }
   
   .description__container {
@@ -134,7 +198,7 @@
   }
 
   #popular {
-    padding-bottom: 135px;
+    padding-bottom: 120px;
     
     h2 {
       margin-bottom: 65px;
@@ -149,9 +213,45 @@
     .img-container--light {
       display: flex;
     }
+
+    h4 {
+      margin-bottom: 10px;
+    }
     
     p {
       margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+
+  #benefit {
+  .fullbleed {
+    padding: 145px 0;
+  }
+
+  h2 {
+    margin-bottom: 64px;
+  }
+
+  .button--body {
+    margin-top: 25px;
+  }
+}
+
+  .benefit__container {
+    padding: 50px 33px 50px 31px;
+    
+    &:nth-child(2n){
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .img-container {
+      margin-bottom: 60px;
+    }
+
+    h3 {
+      margin-bottom: 32px;
     }
   }
 }

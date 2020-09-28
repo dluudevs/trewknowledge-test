@@ -1,3 +1,8 @@
+// CSS Variables
+:root {
+  --header-spacing-y: 24px;
+}
+
 // Colors
 
 $font-blue: #0D47A1;
@@ -5,3 +10,9 @@ $background-blue: #DFF1FF;
 $background-dark-blue: #BBDEFB;
 $background-white: #EFF1EF;
 $button-blue: #0D47A1;
+
+@media (min-width: map-get($breakpoints, 'large')){
+  :root {
+    --header-spacing-y: 65px;
+  }
+}
