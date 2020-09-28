@@ -1,0 +1,28 @@
+#hero {
+  .fullbleed {
+    padding-top: 170px; 
+  }
+
+  h1 {
+    max-width: 266px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .img-container {
+    margin-bottom: 145px;
+  }
+}
+
+@media (min-width: map-get($breakpoints, 'medium')){
+  #hero {
+    h1 {
+      text-align: left;
+      margin: 0;
+    }
+
+    .img-container {
+      margin-bottom: 0;
+    }
+  }
+}   
