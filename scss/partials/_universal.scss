@@ -25,17 +25,7 @@ body {
   max-height: 77px;
 }
 
-.button--body {
-  margin: 0 auto;
-  margin-top: 35px;
-}
-
 @media (min-width: map-get($breakpoints, 'medium')){
-  .button--body {
-    margin: 0;
-    margin-top: 35px;
-  }
-
   .img-placeholder--sm {
     max-width: 105px;
     max-height: 77px;
@@ -47,21 +37,6 @@ body {
   }
 } 
 
-@media (min-width: map-get($breakpoints, 'large')){
-  .button--body {
-    margin-top: 75px;
-  }
-}
-
-// Foundation
-.button {
-  background-color: $accent-blue;
-  font-size: 1rem;
-}
-
-.button.large {
-  font-size: 1rem;
-}
 
 
 

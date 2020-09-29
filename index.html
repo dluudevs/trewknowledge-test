@@ -10,13 +10,102 @@
   </head>
   <body>   
     <header>
+      <nav>
+        <div class="grid-container">
+          <div class="title-bar align-justify" data-responsive-toggle="desktop-nav" data-hide-for="large">
+            <div class="grid-x align-middle">
+              <i aria-label="open nav" class="fas fa-bars mobile_nav"></i>
+              <h2 class="logo">Logo</h2>
+            </div>
+            <div class="grid-x align-middle">
+              <i aria-label="search" class="fas fa-search nav__search"></i>
+              <a href="#" class="nav__sign-in">Sign In <i class="fas fa-user-alt user"></i></a>
+            </div>
+          </div>
+        </div>
+
+          <div id="desktop-nav">
+            <div class="grid-container top-bar">
+              <div class="top-bar-left grid-x">
+                <ul class="nav__social-links grid-x">
+                  <li><a href="#" aria-label="facebook page"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#" aria-label="twitter page"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#" aria-label="linkedin page"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#" aria-label="youtube page"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <ul class="nav__user-pref grid-x">
+                  <li class="expand">En <i class="fas fa-sort-down"></i></li>
+                  <li class="expand">Country <i class="fas fa-sort-down"></i></li>
+                </ul>
+              </div>
+
+              <div class="top-bar-right">
+                <i aria-label="search" class="fas fa-search nav__search"></i>
+                <a href="#" class="nav__sign-in">Sign In <i class="fas fa-user-alt user"></i></a>
+              </div>
+            </div>
+            
+            <hr>
+            
+            <div class="grid-container top-bar">
+              <h2 class="logo top-bar-left">Logo</h2>
+              <ul class="top-bar-right nav__links grid-x align-middle">
+                <li>
+                  <a class="nav__links-item expand" href="#">About Us <i class="fas fa-sort-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="nav__links-item expand" href="#">Resources <i class="fas fa-sort-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="nav__links-item expand" href="#">Library <i class="fas fa-sort-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="nav__links-item expand" href="#">Contact <i class="fas fa-sort-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                  </ul>
+                </li>
+                <li><a class="nav__links-item button" href="#">Get Started</a></li>
+              </ul>
+            </div>
+          </div>
+      </nav>
       <div class="fullbleed">
         <div class="grid-container">
           <div class="grid-x">
             <div class="cell grid-x medium-7 align-center-middle img-container"><img class="img-placeholder--lg" src="assets/image-placeholder.png" alt="image placeholder"></div>
             <div class="cell grid-y medium-5 align-center">
               <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-              <a href="#" class="button button--body large shrink">Get Started Now</a>
+              <a href="#" class="button large shrink">Get Started Now</a>
             </div>
           </div>
         </div>
@@ -26,26 +115,26 @@
       <section id="description">
         <div class="grid-container">
           <div class="grid-x grid-margin-x align-center">
-            <div class="description__container grid-x cell medium-4">
-              <div class="img-container--bg grid-x align-center-middle small-6 medium-12"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--sm"></div>
-              <div class="img-container--bg-dark grid-x align-center-middle medium-12"><img src="assets/image-placeholder-dark.png" alt="image placeholder" class="img-placeholder--sm"></div>
-              <div class="text-container small-6 medium-12">
+            <div class="description__container cell grid-x medium-4">
+              <div class="img-container--bg cell grid-x align-center-middle small-6 medium-12"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--sm"></div>
+              <div class="img-container--bg-dark cell grid-x align-center-middle medium-12"><img src="assets/image-placeholder-dark.png" alt="image placeholder" class="img-placeholder--sm"></div>
+              <div class="text-container cell small-6 medium-12">
                 <h3>Lorem Ipsum</h3>
                 <p>short description goes here Lorem ipsum is simply dummy text of printing</p>
               </div>
             </div>
-            <div class="description__container grid-x cell medium-4" >
-              <div class="img-container--bg grid-x align-center-middle small-6 medium-12"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--sm"></div>
-              <div class="img-container--bg-dark grid-x align-center-middle medium-12"><img src="assets/image-placeholder-dark.png" alt="image placeholder" class="img-placeholder--sm"></div>
-              <div class="text-container small-6 medium-12">
+            <div class="description__container cell grid-x medium-4" >
+              <div class="img-container--bg cell grid-x align-center-middle small-6 medium-12"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--sm"></div>
+              <div class="img-container--bg-dark cell grid-x align-center-middle medium-12"><img src="assets/image-placeholder-dark.png" alt="image placeholder" class="img-placeholder--sm"></div>
+              <div class="text-container cell small-6 medium-12">
                 <h3>Lorem Ipsum</h3>
                 <p>short description goes here Lorem ipsum is simply dummy text of printing</p>
               </div>
             </div>
-            <div class="description__container grid-x cell medium-4">
-              <div class="img-container--bg grid-x align-center-middle small-6 medium-12"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--sm"></div>
-              <div class="img-container--bg-dark grid-x align-center-middle medium-12"><img src="assets/image-placeholder-dark.png" alt="image placeholder" class="img-placeholder--sm"></div>
-              <div class="text-container small-6 medium-12">
+            <div class="description__container cell grid-x medium-4">
+              <div class="img-container--bg cell grid-x align-center-middle small-6 medium-12"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--sm"></div>
+              <div class="img-container--bg-dark cell grid-x align-center-middle medium-12"><img src="assets/image-placeholder-dark.png" alt="image placeholder" class="img-placeholder--sm"></div>
+              <div class="text-container cell small-6 medium-12">
                 <h3>Lorem Ipsum</h3>
                 <p>short description goes here Lorem ipsum is simply dummy text of printing</p>
               </div>
@@ -59,50 +148,50 @@
           <h2>Popular Resources</h2>
           <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y align-center">
             <div class="popular__container cell large-3 medium-6 small-12">
-              <div class="img-container grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <div class="img-container--light grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
               <h4>Lorem Ipsum</h4>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
-              <div class="img-container grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <div class="img-container--light grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
               <h4>Nulla mollis</h4>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
-              <div class="img-container grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <div class="img-container--light grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
               <h4>Lorem Ipsum</h4>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
-              <div class="img-container grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <div class="img-container--light grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
               <h4>Nulla mollis</h4>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
-              <div class="img-container grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <div class="img-container--light grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
               <h4>Lorem Ipsum</h4>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
-              <div class="img-container grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <div class="img-container--light grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
               <h4>Nulla mollis</h4>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
-              <div class="img-container grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <div class="img-container--light grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
+              <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
               <h4>Lorem Ipsum</h4>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
@@ -132,7 +221,7 @@
                 <p>Benefit Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
               </div>
             </div>
-            <a href="#" class="button large button--body">Join</a>
+            <a href="#" class="button large">Join</a>
           </div>
         </div>
       </section>
@@ -142,14 +231,14 @@
       <div class="fullbleed--dark">
         <div class="grid-container">
           <h2 class="logo"><a href="#">Logo</a></h2>
-          <ul class="footer__links grid-x">
-            <li class="large-auto small-12"><a href="">About us</a></li>
-            <li class="large-auto small-12"><a href="">Resources</a></li>
-            <li class="large-auto small-12"><a href="">Library</a></li>
-            <li class="large-auto small-12"><a href="">Get Started</a></li>
-            <li class="large-auto small-12"><a href="">Contact Us</a></li>
-            <li class="large-auto small-12"><a href="">Newsroom</a></li>
-            <li class="large-auto small-12"><a href="">Careers</a></li>
+          <ul class="footer__links cell grid-x">
+            <li class="large-auto small-12"><a href="#">About us</a></li>
+            <li class="large-auto small-12"><a href="#">Resources</a></li>
+            <li class="large-auto small-12"><a href="#">Library</a></li>
+            <li class="large-auto small-12"><a href="#">Get Started</a></li>
+            <li class="large-auto small-12"><a href="#">Contact Us</a></li>
+            <li class="large-auto small-12"><a href="#">Newsroom</a></li>
+            <li class="large-auto small-12"><a href="#">Careers</a></li>
           </ul>
           <div class="footer__media-container grid-x large-flex-dir-row small-flex-dir-column align-justify">
             <ul class="social-media cell grid-x align-justify">

@@ -1,11 +1,152 @@
-// Hero
+nav {
+  padding: 14px 0;
+}
+
+.mobile_nav {
+  margin-right: 21px;
+  font-size: 20px;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.nav__search {
+  font-size: 16px;
+  margin-right: 19px;
+}
+
+.nav__sign-in {
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+
+  .user {
+    margin-left: 9px;
+  }
+}
+
+#desktop-nav {
+  .nav__social-links {
+    margin-right: 30px;
+    font-size: 1.2rem;
+    
+    li {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  .nav__search {
+    margin-right: 30px;
+  }
+  
+  .logo {
+    font-size: 2.14rem;
+  }
+
+  .nav__links {
+    font-size: 1.58rem;
+
+    li {
+      margin-right: 50px;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .button {
+      margin-bottom: 0;
+      padding: 10px 20px;
+    }
+  }
+
+  .nav__links-item {
+    &.button {
+      color: $white;
+    }
+  }
+
+  .expand {
+    i {
+      font-size: 1rem; 
+      margin-left: 12px;
+      transform: translateY(-40%);
+      transition: transform 0.25s;
+    }
+
+    &:hover {
+      i {
+        transform: rotate(180deg);
+      }
+  
+      & + .sub-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .nav__user-pref {
+    font-size: 1.15rem;
+    
+    .expand {
+      cursor: pointer;
+      
+      &:first-child {
+        margin-right: 31px;
+      }
+
+      &:last-child:hover {
+        i {
+          transform: translateY(-40%);
+        }
+      }
+    }
+
+  }
+}
+
 header {
   // TODO: comment out after nav is added
   // height: 100vh;
+  .sub-menu {
+    opacity: 0;
+    visibility: hidden;
+    width: 208px;
+    margin: 0;
+    padding: 23px 0 18px 28px;
+    box-shadow: 0px 2px 4px 0 #707070; 
+    position: absolute;
+    left: -75%;
+    top: calc(100% + 23.5px);
+    transition: opacity 0.35s;
 
+    li {
+      margin-bottom: 13px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
   .fullbleed {
     padding-top: 170px; 
     padding-bottom: 65px;
+
+    .button {
+      width: 174px;
+      margin: 0 auto;
+      margin-top: 35px
+    }
   }
 
   h1 {
@@ -18,7 +159,49 @@ header {
     margin-bottom: 145px;
   }
 
-  .button {
-    width: 174px;
+  a {
+    color: $font-blue;
+
+    &:hover {
+      // foundation default hover color
+      color: #1468a0;
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoints, 'medium')){
+  header {
+    .fullbleed {
+      padding-top: 110px;
+      padding-bottom: 110px;
+
+      .button {
+        margin: 0;
+        margin-top: 35px;
+      }
+    }
+
+    h1 {
+      text-align: left;
+      margin: 0;
+    }
+
+    .img-container {
+      margin-bottom: 0;
+    }
+  }
+
+  .img-container--bg {
+    height: 180px;
+  }
+}
+
+@media (min-width: map-get($breakpoints, 'large')){
+  nav {
+    padding: 20px 0;
+  }
+
+  header .fulbleed .button {
+    margin-top: 75px;
   }
 }
