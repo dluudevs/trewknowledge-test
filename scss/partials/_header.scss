@@ -1,143 +1,8 @@
-nav {
-  padding: 14px 0;
-}
-
-.mobile_nav {
-  margin-right: 21px;
-  font-size: 20px;
-}
-
-.logo {
-  font-size: 19px;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.nav__search {
-  font-size: 16px;
-  margin-right: 19px;
-}
-
-.nav__sign-in {
-  color: inherit;
-  font-size: 16px;
-  font-weight: 400;
-
-  .user {
-    margin-left: 9px;
-  }
-}
-
-#desktop-nav {
-  .nav__social-links {
-    margin-right: 30px;
-    font-size: 1.2rem;
-    
-    li {
-      margin-right: 15px;
-
-      &:last-child {
-        margin-right: 0px;
-      }
-    }
-  }
-
-  .nav__search {
-    margin-right: 30px;
-  }
-  
-  .logo {
-    font-size: 2.14rem;
-  }
-
-  .nav__links {
-    font-size: 1.58rem;
-
-    li {
-      margin-right: 50px;
-      position: relative;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    .button {
-      margin-bottom: 0;
-      padding: 10px 20px;
-    }
-  }
-
-  .nav__links-item {
-    &.button {
-      color: $white;
-    }
-  }
-
-  .expand {
-    i {
-      font-size: 1rem; 
-      margin-left: 12px;
-      transform: translateY(-40%);
-      transition: transform 0.25s;
-    }
-
-    &:hover {
-      i {
-        transform: rotate(180deg);
-      }
-  
-      & + .sub-menu {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
-
-  .nav__user-pref {
-    font-size: 1.15rem;
-    
-    .expand {
-      cursor: pointer;
-      
-      &:first-child {
-        margin-right: 31px;
-      }
-
-      &:last-child:hover {
-        i {
-          transform: translateY(-40%);
-        }
-      }
-    }
-
-  }
-}
-
 header {
   // TODO: comment out after nav is added
   // height: 100vh;
-  .sub-menu {
-    opacity: 0;
-    visibility: hidden;
-    width: 208px;
-    margin: 0;
-    padding: 23px 0 18px 28px;
-    box-shadow: 0px 2px 4px 0 #707070; 
-    position: absolute;
-    left: -75%;
-    top: calc(100% + 23.5px);
-    transition: opacity 0.35s;
+  position: relative;
 
-    li {
-      margin-bottom: 13px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-  
   .fullbleed {
     padding-top: 170px; 
     padding-bottom: 65px;
@@ -165,6 +30,182 @@ header {
     &:hover {
       // foundation default hover color
       color: #1468a0;
+    }
+  }
+}
+
+nav {
+  padding: 14px 0;
+}
+
+.mobile_nav {
+  margin-right: 21px;
+  font-size: 20px;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.nav__search {
+  font-size: 16px;
+  margin-right: 19px;
+}
+
+.sub-menu {
+  opacity: 0;
+  visibility: hidden;
+  width: 208px;
+  margin: 0;
+  padding: 23px 0 18px 28px;
+  box-shadow: 0px 2px 4px 0 #707070; 
+  position: absolute;
+  transition: opacity 0.35s;
+
+  li {
+    margin-bottom: 13px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav__sign-in {
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+
+  .user {
+    margin-left: 9px;
+  }
+}
+
+// for hovering effect and even out spacing
+.nav__links-item, .nav__user-pref > li, .nav__login {
+  padding-bottom: 20px;
+}
+
+.nav__social-links {
+  margin-right: 30px;
+  font-size: 1.2rem;
+  
+  li {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.nav__search {
+  margin-right: 30px;
+}
+
+.nav__links {
+  font-size: 1.58rem;
+
+  li {
+    margin-right: 50px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .button {
+    margin-bottom: 0;
+    padding: 10px 20px;
+  }
+}
+
+.nav__user-pref {
+  font-size: 1.15rem;
+  
+  .expand {
+    cursor: pointer;
+    
+    &:first-child {
+      margin-right: 31px;
+    }
+
+    &:last-child:hover {
+      i {
+        transform: translateY(-40%);
+      }
+    }
+  }
+}
+
+.nav__language {
+  position: relative;
+
+  .sub-menu {
+    font-size: 1.29rem;
+    max-height: 706px;
+    left: -100%;
+    top: 100%;
+    overflow-y: auto;
+
+    li:hover {
+      color: #1468a0;
+    }
+  }
+}
+
+.nav__links-item {
+  cursor: pointer;
+  
+  .sub-menu {
+    left: -25%;
+    top: 100%;
+  }
+  
+  & .button {
+    color: $white;
+    font-size: 1.15rem;
+  }
+}
+
+#country-select {
+  width: 35%;
+  max-width: 500px;
+  height: 756px;
+  border: 1px solid blue;
+  position: absolute;
+}
+
+#desktop-nav {
+  .logo {
+    padding-bottom: 15px;
+    font-size: 2.14rem;
+  }
+
+  hr {
+    margin-top: 0;
+  }
+
+  .expand {
+    i {
+      font-size: 1rem; 
+      margin-left: 12px;
+      transform: translateY(-40%);
+      transition: transform 0.25s;
+    }
+
+    &:hover {
+      i {
+        transform: rotate(180deg);
+      }
+  
+       & > .sub-menu {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }
@@ -198,7 +239,8 @@ header {
 
 @media (min-width: map-get($breakpoints, 'large')){
   nav {
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 0;
   }
 
   header .fulbleed .button {
