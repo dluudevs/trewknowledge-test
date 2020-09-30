@@ -21,34 +21,49 @@ header {
   .img-container {
     margin-bottom: 145px;
   }
-
-  a {
-    color: $font-blue;
-
-    &:hover {
-      color: $foundation-hover;
-    }
-  }
 }
 
 nav {
   padding: 14px 0;
-}
-
-.mobile_nav {
-  margin-right: 21px;
-  font-size: 20px;
+  position: relative;
 }
 
 .logo {
+  margin-left: 21px;
   font-size: 19px;
   font-weight: bold;
   margin-bottom: 0;
 }
 
+.toggle-mobile {
+  font-size: 20px;
+  color: $accent-blue;
+
+  &.inactive {
+    display: none;
+  }
+}
+
+
+.toggle-mobile--close {
+  font-size: 42px;
+  position: absolute;
+  transform: translateY(-2.5px);
+  display: none;
+
+  &.active {
+    display: block;
+    
+    & + .logo {
+      margin-left: 38.5px;
+    }
+  }
+}
+
 .nav__search {
   font-size: 16px;
   margin-right: 19px;
+  color: $accent-blue;
 }
 
 .sub-menu {
@@ -163,32 +178,68 @@ nav {
   }
 }
 
-#country-select {
-  width: 35%;
-  max-width: 550px;
-  height: 756px;
+#mobile-nav {
+  height: calc(100vh - 68px);
+  width: 100%;
   position: absolute;
+  top: 100%;
   z-index: 10;
-  box-shadow: 0px 2px 4px 0 #707070;
-  background-color: $white;
-  padding: 30px 30px 82px 30px;
-  transform: translateX(-100%);
-  overflow: hidden;
-  transition: transform 0.35s;
-
+  background-color: $accent-blue;
+  padding: 50px 0;
+  color: $white;
+  transition: opacity 0.25s;
+  opacity: 0;
+  visibility: hidden;
+  
   &.active {
-    transform: translateX(0%);
-    overflow: auto;
-  }
-
-  .close-button {
-    top: 25px;
-    right: 30px;
+    opacity: 1;
+    visibility: visible;
+    // transition: opacity 0.25s;
   }
   
-  h3 {
-    font-size: 1.79rem;
-    margin-bottom: 20px;
+  & > div {
+    height: 100%;
+  }
+
+  .nav__links {
+    text-align: center;
+    
+    li {
+      font-size: 1.15rem;
+      margin-right: 0;
+      width: 192px;
+      margin-bottom: 22px;
+
+      &:first-child {
+        padding: 10px 55px;
+        border: 1px solid $white;
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
+  .social-media {
+    margin-top: 47px;
+    margin-bottom: 0;
+    width: 157px;
+  }
+}
+
+.nav__user-local {
+  li {
+    width: 132px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1565C0;
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -231,6 +282,7 @@ nav {
     cursor: pointer;
   }
 }
+
 
 @media (min-width: map-get($breakpoints, 'medium')){
   header {

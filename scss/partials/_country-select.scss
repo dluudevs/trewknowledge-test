@@ -1,0 +1,28 @@
+#country-select {
+  width: 35%;
+  max-width: 550px;
+  height: 756px;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0px 2px 4px 0 #707070;
+  background-color: $white;
+  padding: 30px 30px 82px 30px;
+  transform: translateX(-100%);
+  overflow: hidden;
+  transition: transform 0.35s;
+
+  &.active {
+    transform: translateX(0%);
+    overflow: auto;
+  }
+
+  .close-button {
+    top: 25px;
+    right: 30px;
+  }
+  
+  h3 {
+    font-size: 1.79rem;
+    margin-bottom: 20px;
+  }
+}

@@ -1,5 +1,5 @@
 body {
-  color: $font-blue;
+  color: $accent-blue;
 }
 
 .fullbleed {
@@ -27,7 +27,7 @@ body {
 
 .close-button {
   font-size: 3rem;
-  color: $font-blue;
+  color: $accent-blue;
 
   &:hover {
     color: $foundation-hover;

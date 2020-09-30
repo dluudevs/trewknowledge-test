@@ -10,7 +10,8 @@
   </head>
   <body>   
     <header>
-      <div id="country-select" data-toggler=".active">
+      <!-- Country Select -->
+      <aside id="country-select" data-toggler=".active">
         <button class="close-button" aria-label="close country select" data-toggle="country-select">&times;</button>
         <h3>Select Country</h3>
         <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
@@ -80,8 +81,157 @@
             <hr>
           </li>
         </ul>
-      </div>
+      </aside>
+      
+      <!-- Mobile Nav-->
+      <nav>
+        <div class="grid-container">
+          <div class="title-bar align-justify" data-responsive-toggle="desktop-nav" data-hide-for="large">
+            <div class="grid-x align-middle">
+              <button class="toggle-mobile toggle-mobile--open"><i aria-label="open nav" class="fas fa-bars" data-toggle="mobile-nav"></i></button>
+              <button class="toggle-mobile toggle-mobile--close" aria-label="close nav" data-toggle="mobile-nav">&times;</button>
+              <h2 class="logo">Logo</h2>
+            </div>
+            <div class="grid-x align-middle">
+              <button class="nav__search"><i aria-label="search" class="fas fa-search"></i></button>
+              <p class="nav__sign-in" data-open="sign-in__modal">Sign In <i class="fas fa-user-alt user"></i></a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Expanded Mobile Nav -->
+        <div id="mobile-nav" data-toggler=".active">
+          <div class="grid-y align-justify">
+            <ul class="nav__links grid-y align-middle">
+              <li><a href="#">Get Started</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav__user-pref grid-y align-middle">
+              <ul class="nav__user-local">
+                <li class="grid-x align-justify">En <i class="fas fa-sort-down"></i></li>
+                <li class="grid-x align-justify">Country <i class="fas fa-sort-down"></i></li>
+              </ul>
+              <ul class="social-media cell grid-x align-justify">
+                <li><a href="#" aria-label="facebook page"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="twitter page"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" aria-label="linkedin page"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#" aria-label="youtube page"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Desktop Nav -->
+        <div id="desktop-nav">
+          <div class="grid-container top-bar">
+            <div class="top-bar-left grid-x">
+              <ul class="nav__social-links grid-x">
+                <li><a href="#" aria-label="facebook page"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="twitter page"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" aria-label="linkedin page"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#" aria-label="youtube page"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+              <ul class="nav__user-pref grid-x">
+                <li class="expand nav__language">
+                  En <i class="fas fa-sort-down"></i>
+                  <ul class="sub-menu">
+                    <li>Afrikaans</li>
+                    <li>Albanian</li>
+                    <li>Arabic</li>
+                    <li>Armenian</li>
+                    <li>Basque</li>
+                    <li>Bengali</li>
+                    <li>Byelorussian</li>
+                    <li>Burmese</li>
+                    <li>Bulgarian</li>
+                    <li>Catalan</li>
+                    <li>Czech</li>
+                    <li>Chinese</li>
+                    <li>Croatian</li>
+                    <li>Danish</li>
+                    <li>Dari</li>
+                    <li>Dzongkha</li>
+                    <li>Dutch</li>
+                    <li>English</li>
+                    <li>Esperanto</li>
+                    <li>Estonian</li>
+                    <li>Faroese</li>
+                    <li>Farsi</li>
+                    <li>Finnish</li>
+                    <li>French</li>
+                    <li>Gaelic</li>
+                  </ul>
+                </li>
+                <li class="country__toggle expand" data-toggle="country-select">Country <i class="fas fa-sort-down"></i></li>
+              </ul>
+            </div>
+
+            <div class="top-bar-right nav__login">
+              <a href="#"><i aria-label="search" class="fas fa-search nav__search"></i></a>
+              <p class="nav__sign-in" data-open="sign-in__modal">Sign In <i class="fas fa-user-alt user"></i></p>
+            </div>
+          </div>
+          
+          <hr>
+          <!-- Desktop Nav - Nav Links -->
+          <div class="grid-container top-bar">
+            <h2 class="logo top-bar-left align-middle">Logo</h2>
+            <ul class="top-bar-right nav__links grid-x align-middle">
+              <li class="expand nav__links-item">
+                <a class="" href="#">About Us <i class="fas fa-sort-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Link 5</a></li>
+                  <li><a href="#">Link 6</a></li>
+                </ul>
+              </li>
+              <li class="expand nav__links-item">
+                <a class="" href="#">Resources <i class="fas fa-sort-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Link 5</a></li>
+                  <li><a href="#">Link 6</a></li>
+                </ul>
+              </li>
+              <li class="expand nav__links-item">
+                <a class="" href="#">Library <i class="fas fa-sort-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Link 5</a></li>
+                  <li><a href="#">Link 6</a></li>
+                </ul>
+              </li>
+              <li class="expand nav__links-item">
+                <a class="" href="#">Contact <i class="fas fa-sort-down"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Link 5</a></li>
+                  <li><a href="#">Link 6</a></li>
+                </ul>
+              </li>
+              <li class="nav__links-item"><a class="button" href="#">Get Started</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sign Up Modal -->
       <div class="reveal" id="sign-in__modal" data-reveal>
         <h2>Sign In</h2>
         <div class="user-auth button-group grid-x grid-margin-x align-center">
@@ -123,126 +273,7 @@
         <p class="signup-cta">Haven't an account? <a href="#">Sign up</a></p>
       </div>
 
-      <nav>
-        <div class="grid-container">
-          <div class="title-bar align-justify" data-responsive-toggle="desktop-nav" data-hide-for="large">
-            <div class="grid-x align-middle">
-              <i aria-label="open nav" class="fas fa-bars mobile_nav"></i>
-              <h2 class="logo">Logo</h2>
-            </div>
-            <div class="grid-x align-middle">
-              <i aria-label="search" class="fas fa-search nav__search"></i>
-              <p class="nav__sign-in" data-open="sign-in__modal">Sign In <i class="fas fa-user-alt user"></i></a>
-            </div>
-          </div>
-        </div>
-
-          <div id="desktop-nav">
-            <div class="grid-container top-bar">
-              <div class="top-bar-left grid-x">
-                <ul class="nav__social-links grid-x">
-                  <li><a href="#" aria-label="facebook page"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#" aria-label="twitter page"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#" aria-label="linkedin page"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#" aria-label="youtube page"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-                <ul class="nav__user-pref grid-x">
-                  <li class="expand nav__language">
-                    En <i class="fas fa-sort-down"></i>
-                    <ul class="sub-menu">
-                      <li>Afrikaans</li>
-                      <li>Albanian</li>
-                      <li>Arabic</li>
-                      <li>Armenian</li>
-                      <li>Basque</li>
-                      <li>Bengali</li>
-                      <li>Byelorussian</li>
-                      <li>Burmese</li>
-                      <li>Bulgarian</li>
-                      <li>Catalan</li>
-                      <li>Czech</li>
-                      <li>Chinese</li>
-                      <li>Croatian</li>
-                      <li>Danish</li>
-                      <li>Dari</li>
-                      <li>Dzongkha</li>
-                      <li>Dutch</li>
-                      <li>English</li>
-                      <li>Esperanto</li>
-                      <li>Estonian</li>
-                      <li>Faroese</li>
-                      <li>Farsi</li>
-                      <li>Finnish</li>
-                      <li>French</li>
-                      <li>Gaelic</li>
-                    </ul>
-                  </li>
-                  <li class="country__toggle expand" data-toggle="country-select">Country <i class="fas fa-sort-down"></i></li>
-                </ul>
-              </div>
-
-             
-
-              <div class="top-bar-right nav__login">
-                <a href="#"><i aria-label="search" class="fas fa-search nav__search"></i></a>
-                <p class="nav__sign-in" data-open="sign-in__modal">Sign In <i class="fas fa-user-alt user"></i></p>
-              </div>
-            </div>
-            
-            <hr>
-            
-            <div class="grid-container top-bar">
-              <h2 class="logo top-bar-left align-middle">Logo</h2>
-              <ul class="top-bar-right nav__links grid-x align-middle">
-                <li class="expand nav__links-item">
-                  <a class="" href="#">About Us <i class="fas fa-sort-down"></i></a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                  </ul>
-                </li>
-                <li class="expand nav__links-item">
-                  <a class="" href="#">Resources <i class="fas fa-sort-down"></i></a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                  </ul>
-                </li>
-                <li class="expand nav__links-item">
-                  <a class="" href="#">Library <i class="fas fa-sort-down"></i></a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                  </ul>
-                </li>
-                <li class="expand nav__links-item">
-                  <a class="" href="#">Contact <i class="fas fa-sort-down"></i></a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                  </ul>
-                </li>
-                <li class="nav__links-item"><a class="button" href="#">Get Started</a></li>
-              </ul>
-            </div>
-          </div>
-      </nav>
+      <!-- Hero  -->
       <div class="fullbleed">
         <div class="grid-container">
           <div class="grid-x">

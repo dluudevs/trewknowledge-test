@@ -49,10 +49,7 @@
     margin-top: 10px;
     font-size: 0.86rem;
 
-    a {
-      color: $font-blue;
-    }
-
+    // https://stackoverflow.com/questions/1120879/css-checkbox-input-styling
     input[type="checkbox"] {
       margin-bottom: 0;
       position: relative;
@@ -101,7 +98,6 @@
 
     a {
       font-weight: normal;
-      color: $font-blue;
     }
   }
 }
@@ -111,6 +107,8 @@
     &.reveal {
       top: 40px !important;
       padding: 85px 219px 85px 219px;
+      height: 687px;
+      min-height: 687px;
     }
 
     h2 {
