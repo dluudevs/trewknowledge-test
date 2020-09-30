@@ -30,14 +30,15 @@ nav {
 
 .logo {
   margin-left: 21px;
-  font-size: 19px;
+  font-size: 1.36px;
   font-weight: bold;
   margin-bottom: 0;
 }
 
 .toggle-mobile {
-  font-size: 20px;
+  font-size: 1.43rem;
   color: $accent-blue;
+  cursor: pointer;
 
   &.inactive {
     display: none;
@@ -46,7 +47,7 @@ nav {
 
 
 .toggle-mobile--close {
-  font-size: 42px;
+  font-size: 3rem;
   position: absolute;
   transform: translateY(-2.5px);
   display: none;
@@ -61,7 +62,7 @@ nav {
 }
 
 .nav__search {
-  font-size: 16px;
+  font-size: 1.14rem;
   margin-right: 19px;
   color: $accent-blue;
 }
@@ -91,10 +92,12 @@ nav {
 }
 
 .nav__sign-in {
+  cursor: pointer;
   color: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0;
+  display: inline-block;
 
   .user {
     margin-left: 9px;
@@ -117,10 +120,6 @@ nav {
       margin-right: 0px;
     }
   }
-}
-
-.nav__search {
-  margin-right: 30px;
 }
 
 .nav__links {
@@ -153,7 +152,7 @@ nav {
   }
 }
 
-.nav__language {
+.language__toggle {
   position: relative;
 
   .sub-menu {
@@ -283,7 +282,6 @@ nav {
   }
 }
 
-
 #desktop-nav {
   .logo {
     padding-bottom: 15px;
@@ -316,38 +314,12 @@ nav {
       }
     }
   }
-
-  .nav__sign-in {
-    display: inline;
-    cursor: pointer;
-  }
 }
 
-
 @media (min-width: map-get($breakpoints, 'medium')){
-  header {
-    .fullbleed {
-      padding-top: 110px;
-      padding-bottom: 110px;
-
-      .button {
-        margin: 0;
-        margin-top: 35px;
-      }
-    }
-
-    h1 {
-      text-align: left;
-      margin: 0;
-    }
-
-    .img-container {
-      margin-bottom: 0;
-    }
-  }
-
-  .img-container--bg {
-    height: 180px;
+  #mobile-nav {
+    height: 905px;
+    padding: 150px;
   }
 }
 
@@ -357,7 +329,28 @@ nav {
     padding-bottom: 0;
   }
 
-  header .fulbleed .button {
-    margin-top: 75px;
+  header {
+    .fullbleed {
+      padding-top: 110px;
+      padding-bottom: 110px;
+
+      .button {
+        margin: 0;
+        margin-top: 75px;
+      }
+
+      h1 {
+        text-align: left;
+        margin: 0;
+      }
+
+      .img-container {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .nav__search {
+    margin-right: 30px;
   }
 }

@@ -7,6 +7,7 @@ footer {
   .logo {
     font-size: 55px;
     font-weight: bold;
+    margin-left: 0;
     margin-bottom: 40px;
 
     & a:hover {
@@ -42,7 +43,7 @@ footer, footer a {
 }
 
 .social-media {
-  font-size: 24px;
+  font-size: 1.57rem;
   max-width: 220px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -51,6 +52,10 @@ footer, footer a {
 .fine-print span {
   margin-left: 13px;
   margin-right: 13px;
+}
+
+.fine-print a:hover {
+  color: $white;
 }
 
 @media (min-width: map-get($breakpoints, 'large')){

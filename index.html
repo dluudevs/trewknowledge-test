@@ -38,8 +38,8 @@
             </ul>
             <div class="nav__user-pref grid-y align-middle">
               <ul class="nav__user-local">
-                <li class="grid-x align-justify languages__toggle--mobile">En <i class="fas fa-sort-down"></i></li>
-                <li class="grid-x align-justify country__toggle--mobile">Country <i class="fas fa-sort-down"></i></li>
+                <li class="grid-x align-justify languages__toggle--mobile" aria-label="Change Language">En <i class="fas fa-sort-down"></i></li>
+                <li class="grid-x align-justify country__toggle--mobile" aria-label="Change Country">Country <i class="fas fa-sort-down"></i></li>
               </ul>
               <ul class="social-media cell grid-x align-justify">
                 <li><a href="#" aria-label="facebook page"><i class="fab fa-facebook-f"></i></a></li>
@@ -62,7 +62,7 @@
                 <li><a href="#" aria-label="youtube page"><i class="fab fa-youtube"></i></a></li>
               </ul>
               <ul class="nav__user-pref grid-x">
-                <li class="expand expand--no-hover nav__language" data-toggle="countries">
+                <li class="expand language__toggle" data-toggle="countries">
                   En <i class="fas fa-sort-down"></i>
                   <ul class="sub-menu" id="countries" data-toggler=".active">
                     <li>Afrikaans</li>
@@ -92,7 +92,7 @@
                     <li>Gaelic</li>
                   </ul>
                 </li>
-                <li class="expand expand--no-hover country__toggle" data-toggle="country-select">Country <i class="fas fa-sort-down"></i></li>
+                <li class="expand country__toggle" data-toggle="country-select">Country <i class="fas fa-sort-down"></i></li>
               </ul>
             </div>
 
@@ -273,16 +273,12 @@
         <form action="">
           <div class="grid-x grid-margin-y">
             <div class="small-12">
-              <label for="email">
-                Email
-                <input type="text" id="email" name="email">
-            </label>
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
           </div>
             <div class="small-12">
-              <label for="password">
-                Password
-                <input type="text" id="password" name="password">
-            </label>
+              <label for="password">Password</label>
+              <input type="text" id="password" name="password">
           </div>
           </div>
           <div class="grid-x align-justify user-action">
@@ -308,10 +304,10 @@
       <div class="fullbleed">
         <div class="grid-container">
           <div class="grid-x">
-            <div class="cell grid-x medium-7 align-center-middle img-container"><img class="img-placeholder--lg" src="assets/image-placeholder.png" alt="image placeholder"></div>
-            <div class="cell grid-y medium-5 align-center">
+            <div class="cell grid-x large-7 align-center-middle img-container"><img class="img-placeholder--lg" src="assets/image-placeholder.png" alt="image placeholder"></div>
+            <div class="cell grid-y large-5 align-center">
               <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-              <a href="#" class="button large shrink">Get Started Now</a>
+              <a href="#" class="button large">Get Started Now</a>
             </div>
           </div>
         </div>

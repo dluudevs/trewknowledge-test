@@ -122,6 +122,10 @@
       font-size: 25px;
     }
   }
+
+  .img-container--bg {
+    height: 180px;
+  }
 }  
 
 @media (min-width: map-get($breakpoints, 'large')){
