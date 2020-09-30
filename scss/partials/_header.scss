@@ -85,6 +85,11 @@ nav {
   }
 }
 
+#countries.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .nav__sign-in {
   color: inherit;
   font-size: 16px;
@@ -179,7 +184,8 @@ nav {
 }
 
 #mobile-nav {
-  height: calc(100vh - 68px);
+  // same height as hero
+  height: 725px;
   width: 100%;
   position: absolute;
   top: 100%;
@@ -194,7 +200,6 @@ nav {
   &.active {
     opacity: 1;
     visibility: visible;
-    // transition: opacity 0.25s;
   }
   
   & > div {
@@ -243,9 +248,46 @@ nav {
   }
 }
 
+#languages-mobile {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: $white;
+  overflow: auto;
+  opacity: 0;
+  visibility: 0;
+  
+  .close-button {
+    font-size: 2.5rem;
+  }
+  
+  .sub-menu {
+    width: 100%;
+    height: auto;
+    padding: 45px 0 15px 15px;
+    overflow: auto;
+  }
+  
+  &.active {
+    position: fixed;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    
+    .sub-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+
 #desktop-nav {
   .logo {
     padding-bottom: 15px;
+    margin: 0;
     font-size: 2.14rem;
   }
 
@@ -260,21 +302,19 @@ nav {
       transform: translateY(-40%);
       transition: transform 0.25s;
     }
+  }
 
+  .expand--hover {
     &:hover {
       i {
         transform: rotate(180deg);
       }
   
-       & > .sub-menu {
+      & > .sub-menu {
         opacity: 1;
         visibility: visible;
       }
     }
-  }
-
-  .country__toggle:hover i {
-    transform: translateY(-40%);
   }
 
   .nav__sign-in {

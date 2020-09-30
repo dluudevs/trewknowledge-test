@@ -2,6 +2,10 @@ body {
   color: $accent-blue;
 }
 
+a:hover > i {
+  color: $foundation-hover;
+}
+
 .fullbleed {
   background-color: $background-blue;
 }
@@ -25,13 +29,9 @@ body {
   max-height: 77px;
 }
 
+// Foundation
 .close-button {
   font-size: 3rem;
-  color: $accent-blue;
-
-  &:hover {
-    color: $foundation-hover;
-  }
 }
 
 @media (min-width: map-get($breakpoints, 'medium')){
