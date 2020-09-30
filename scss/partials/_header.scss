@@ -132,12 +132,6 @@ nav {
     &:first-child {
       margin-right: 31px;
     }
-
-    &:last-child:hover {
-      i {
-        transform: translateY(-40%);
-      }
-    }
   }
 }
 
@@ -173,10 +167,33 @@ nav {
 
 #country-select {
   width: 35%;
-  max-width: 500px;
+  max-width: 550px;
   height: 756px;
-  border: 1px solid blue;
   position: absolute;
+  z-index: 10;
+  box-shadow: 0px 2px 4px 0 #707070;
+  background-color: $white;
+  padding: 30px 30px 82px 30px;
+  transform: translateX(-100%);
+  overflow: hidden;
+  transition: transform 0.35s;
+
+  &.active {
+    transform: translateX(0%);
+    overflow: auto;
+  }
+
+  .close-button {
+    font-size: 3rem;
+    color: $font-blue;
+    top: 25px;
+    right: 30px;
+  }
+  
+  h3 {
+    font-size: 1.79rem;
+    margin-bottom: 20px;
+  }
 }
 
 #desktop-nav {
@@ -207,6 +224,10 @@ nav {
         visibility: visible;
       }
     }
+  }
+
+  .country__toggle:hover i {
+    transform: translateY(-40%);
   }
 }
 

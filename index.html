@@ -10,9 +10,77 @@
   </head>
   <body>   
     <header>
-      <!-- <div id="country-select">
-
-      </div> -->
+      <div id="country-select" data-toggler=".active">
+        <button class="close-button" data-toggle="country-select">&times;</button>
+        <h3>Select Country</h3>
+        <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
+          <li class="accordion-menu__item">
+            <a href="#">Africa</a>
+            <ul class="menu vertical nested accordion-sub__item">
+              <li>Ethiopia</li>
+              <li>Ghana</li>
+              <li>Kenya</li>
+              <li>Morocco</li>
+              <li>Nigeria</li>
+              <li>Tanzania</li>
+            </ul>
+            <hr>
+          </li>
+          <li class="accordion-menu__item">
+            <a href="#">Asia</a>
+            <ul class="menu vertical nested accordion-sub__item">
+              <li>China</li>
+              <li>Greenfields Indonesia</li>
+              <li>India</li>
+              <li>Japan</li>
+              <li>Korean (South)</li>
+              <li>Pakistan</li>
+            </ul>
+            <hr>
+          </li>
+          <li class="accordion-menu__item">
+            <a href="#">Australia</a>
+            <ul class="menu vertical nested accordion-sub__item">
+              <li>Australia</li>
+              <li>Papa New Guinea</li>
+              <li>Tasmania</li>
+              <li>Western New Guinea</li>
+            </ul>
+            <hr>
+          </li>
+          <li class="accordion-menu__item">
+            <a href="#">Europe - Middle East</a>
+            <ul class="menu vertical nested accordion-sub__item">
+              <li>Austria</li>
+              <li>Belarus</li>
+              <li>Greece</li>
+              <li>Iran</li>
+              <li>Syria</li>
+              <li>Turkey</li>
+            </ul>
+            <hr>
+          </li>
+          <li class="accordion-menu__item">
+            <a href="#">Latin America</a>
+            <ul class="menu vertical nested accordion-sub__item">
+              <li>Costa Rica</li>
+              <li>Honduras</li>
+              <li>Mexico</li>
+              <li>Peru</li>
+              <li>Venezuela</li>
+            </ul>
+            <hr>
+          </li>
+          <li class="accordion-menu__item">
+            <a href="#">North America</a>
+            <ul class="menu vertical nested accordion-sub__item">
+              <li>Canada</li>
+              <li>United States</li>
+            </ul>
+            <hr>
+          </li>
+        </ul>
+      </div>
 
       <nav>
         <div class="grid-container">
@@ -68,7 +136,7 @@
                       <li>Gaelic</li>
                     </ul>
                   </li>
-                  <li class="expand">Country <i class="fas fa-sort-down"></i></li>
+                  <li class="country__toggle expand" data-toggle="country-select">Country <i class="fas fa-sort-down"></i></li>
                 </ul>
               </div>
 
@@ -185,49 +253,49 @@
             <div class="popular__container cell large-3 medium-6 small-12">
               <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
               <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <h4>Lorem Ipsum</h4>
+              <h3>Lorem Ipsum</h3>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
               <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
               <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <h4>Nulla mollis</h4>
+              <h3>Nulla mollis</h3>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
               <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
               <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <h4>Lorem Ipsum</h4>
+              <h3>Lorem Ipsum</h3>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
               <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
               <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <h4>Nulla mollis</h4>
+              <h3>Nulla mollis</h3>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
               <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
               <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <h4>Lorem Ipsum</h4>
+              <h3>Lorem Ipsum</h3>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
               <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
               <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <h4>Nulla mollis</h4>
+              <h3>Nulla mollis</h3>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
             <div class="popular__container cell large-3 medium-6 small-12">
               <div class="img-container cell grid-x align-center-middle"><img src="assets/image-placeholder.png" alt="image placeholder" class="img-placeholder--md"></div>
               <div class="img-container--light cell grid-x align-center-middle"><img src="assets/image-placeholder-light.png" alt="image placeholder" class="img-placeholder--md"></div>
-              <h4>Lorem Ipsum</h4>
+              <h3>Lorem Ipsum</h3>
               <p>Short description goes here Lorem Ipsum is simply dummy text</p>
               <a href="#">Learn More</a>
             </div>
