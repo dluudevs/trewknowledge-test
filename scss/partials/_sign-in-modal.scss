@@ -1,12 +1,16 @@
 #sign-in__modal {
   &.reveal {
     // override inline styles
-    top: 40px !important;
+    top: 15% !important;
+    width: 92.5%;
+    height: 76%;
+    min-height: 76%;
+    margin: 0 auto;
   }
 
   h2 {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 36px;
   }
 
   .button {
@@ -16,7 +20,6 @@
   }
 
   .user-auth {
-    margin-bottom: 24px;
     
     .button {
       i {
@@ -31,8 +34,8 @@
   }
 
   form {
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 14px;
   }
 
   p {
@@ -43,7 +46,7 @@
   }
 
   .user-action {
-    margin-top: 12px;
+    margin-top: 10px;
     font-size: 0.86rem;
 
     a {
@@ -88,7 +91,8 @@
   }
 
   .button[type="submit"]{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 
   .signup-cta {
@@ -100,6 +104,29 @@
       color: $font-blue;
     }
   }
-  
-  
+}
+
+@media (min-width: map-get($breakpoints, 'large')){
+  #sign-in__modal {
+    &.reveal {
+      top: 40px !important;
+      padding: 85px 219px 85px 219px;
+    }
+
+    h2 {
+      margin-bottom: 45px;
+    }
+
+    .user-auth {
+      margin-bottom: 24px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    .button[type="submit"]{
+      margin-top: 30px;
+    }
+  }
 }
