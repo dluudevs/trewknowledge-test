@@ -11,7 +11,7 @@
   <body>   
     <header>
       <div id="country-select" data-toggler=".active">
-        <button class="close-button" data-toggle="country-select">&times;</button>
+        <button class="close-button" aria-label="close country select" data-toggle="country-select">&times;</button>
         <h3>Select Country</h3>
         <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
           <li class="accordion-menu__item">
@@ -82,6 +82,47 @@
         </ul>
       </div>
 
+      <div class="reveal" id="sign-in__modal" data-reveal>
+        <h2>Sign In</h2>
+        <div class="user-auth button-group grid-x grid-margin-x align-center">
+          <a href="#" class="button"><i class="fab fa-facebook-f"></i>Facebook</a>
+          <a href="#" class="button"><i class="fab fa-google"></i>Google</a>
+        </div>
+        <p>or</p>
+        <form action="">
+          <div class="grid-x grid-margin-y">
+            <div class="small-12">
+              <label for="email">
+                Email
+                <input type="text" id="email" name="email">
+            </label>
+          </div>
+            <div class="small-12">
+              <label for="password">
+                Password
+                <input type="text" id="password" name="password">
+            </label>
+          </div>
+          </div>
+          <div class="grid-x align-justify user-action">
+            <div class="grid-x align-center-middle">
+              <input type="checkbox" id="remember" name="remember" value="yes">
+              <label for="remember">Remember me?</label>
+            </div>
+            <div class="grid-x align-middle">
+              <a href="#">Forgot Password?</a>
+            </div>
+          </div>
+          <div class="grid-x align-center">
+            <button type="submit" class="button">Sign Up</button>
+          </div>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </form>
+        <p class="signup-cta">Haven't an account? <a href="#">Sign up</a></p>
+      </div>
+
       <nav>
         <div class="grid-container">
           <div class="title-bar align-justify" data-responsive-toggle="desktop-nav" data-hide-for="large">
@@ -91,7 +132,7 @@
             </div>
             <div class="grid-x align-middle">
               <i aria-label="search" class="fas fa-search nav__search"></i>
-              <a href="#" class="nav__sign-in">Sign In <i class="fas fa-user-alt user"></i></a>
+              <p class="nav__sign-in" data-open="sign-in__modal">Sign In <i class="fas fa-user-alt user"></i></a>
             </div>
           </div>
         </div>
@@ -144,7 +185,7 @@
 
               <div class="top-bar-right nav__login">
                 <a href="#"><i aria-label="search" class="fas fa-search nav__search"></i></a>
-                <a href="#" class="nav__sign-in">Sign In <i class="fas fa-user-alt user"></i></a>
+                <p class="nav__sign-in" data-open="sign-in__modal">Sign In <i class="fas fa-user-alt user"></i></p>
               </div>
             </div>
             

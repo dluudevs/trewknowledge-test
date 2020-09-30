@@ -2,22 +2,6 @@ body {
   color: $font-blue;
 }
 
-body::-webkit-scrollbar {
-  width: 11px;
-}
-body {
-  scrollbar-width: thin;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-}
-body::-webkit-scrollbar-track {
-  background: var(--scrollbarBG);
-}
-body::-webkit-scrollbar-thumb {
-  background-color: var(--thumbBG) ;
-  border-radius: 6px;
-  border: 3px solid var(--scrollbarBG);
-}
-
 .fullbleed {
   background-color: $background-blue;
 }
@@ -39,6 +23,15 @@ body::-webkit-scrollbar-thumb {
 .img-placeholder--lg {
   max-width: 105px;
   max-height: 77px;
+}
+
+.close-button {
+  font-size: 3rem;
+  color: $font-blue;
+
+  &:hover {
+    color: $foundation-hover;
+  }
 }
 
 @media (min-width: map-get($breakpoints, 'medium')){

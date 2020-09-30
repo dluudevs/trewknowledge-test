@@ -1,0 +1,105 @@
+#sign-in__modal {
+  &.reveal {
+    // override inline styles
+    top: 40px !important;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .button {
+    width: 170px;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .user-auth {
+    margin-bottom: 24px;
+    
+    .button {
+      i {
+        margin-right: 10px;
+        font-size: 1.15rem;
+      }
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  form {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.14rem;
+    margin-bottom: 0px;
+  }
+
+  .user-action {
+    margin-top: 12px;
+    font-size: 0.86rem;
+
+    a {
+      color: $font-blue;
+    }
+
+    input[type="checkbox"] {
+      margin-bottom: 0;
+      position: relative;
+      cursor: pointer;
+      width: 22.3px;
+      height: 22.3px;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 22.3px;
+        height: 22.3px;
+        top: 0;
+        left: 0;
+        border: 1px solid $background-blue;
+        border-radius: 2px;
+        background-color: white;
+      }
+
+      &:checked:after {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 10px;
+        border: solid $accent-blue;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 4px;
+        left: 8px;
+      }
+    }
+  }
+
+  .button[type="submit"]{
+    margin-top: 30px;
+  }
+
+  .signup-cta {
+    font-weight: 300;
+    margin-bottom: 0;
+
+    a {
+      font-weight: normal;
+      color: $font-blue;
+    }
+  }
+  
+  
+}
